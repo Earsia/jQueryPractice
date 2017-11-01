@@ -1,0 +1,91 @@
+* {
+	padding: 0;
+    margin: 0;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+.wrap {
+	display: flex;
+	flex-flow: row wrap;
+    justify-content: space-between;
+}
+.title {
+	font-size: 26px;
+	color: gainsboro;
+}
+.prod-area1 {
+	width: 800px;
+	margin: 50px auto;
+}
+
+.prod-area1 li {
+	position: relative;
+	margin-bottom: 20px;
+}
+.msg img {
+	width: 150px;
+	height: 150px;
+}
+.msg {
+	width: 225px;
+	height: 225px;
+	font-size: 14px;
+	border: 1px solid #eee;
+	text-align: center;
+}
+.msg .name {
+	text-align: left;
+	padding: 0 10px;
+}
+.msg .price {
+	padding: 0 10px;
+	text-align: left;
+	color: red;
+}
+.cover {
+	position: absolute;
+    width: 200px;
+    height: 200px;
+    opacity: 1;
+}
+.cover a {
+	display: none;
+}
+.hover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    vertical-align: center;
+    display: block;
+}
+.hover:after {
+	content: ""; 
+	height: 100%; 
+	display: inline-block; 
+	vertical-align: middle; 
+	visibility: hidden; 
+}
+.hover a {
+	display: inline;
+	color: red;
+	font-size: 15px;
+	border: 1px solid red;
+	border-radius: 5px;
+	padding: 10px;
+	background-color: white;
+    cursor: pointer;
+}
+.button {
+	padding: 10px;
+	border: 1px solid red;
+	border-radius: 5px;
+	color: red;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>tab切换效果</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/switch.css">
+</head>
+<body>
+    <!--<div class="main">
+        <ul>
+            <li>tab1</li>
+            <li>tab2</li>
+            <li>tab3</li>
+        </ul>
+        <div class="ct active">ct1</div>
+        <div class="ct">ct2</div>
+        <div class="ct">ct3</div>
+    </div>-->
+
+    <div class="main">
+        <ul class="option">
+            <li>tab1</li>
+            <li>tab2</li>
+            <li>tab3</li>
+        </ul>
+        <div class="wrap">
+            <ul>
+                <li>内容一</li>
+                <li>内容二</li>
+                <li>内容三</li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+<script>
+    $(".main li").on("click",function(e){
+        console.log(1);
+        $(this).addClass("select").siblings().removeClass("select");
+        var index = $(this).index();
+        var gtw = $(this).parents().find(".wrap ul li").eq(index).innerHeight();
+        console.log(gtw)
+        $(this).parents().find(".wrap ul").animate({top: -gtw*index});
+    })
+</script>
+</html>

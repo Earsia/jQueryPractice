@@ -1,0 +1,39 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+li {
+	list-style: none;
+}
+.ct {
+	position: relative;
+}
+.option {
+	border-bottom: 0.8px solid white;
+	background-color: #de272e;
+	color: white;
+	width: 200px;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+.parentMenu span {
+	float: right;
+}
+.childMenu {
+	display: none;
+}
+.hover .childMenu {
+	position: absolute;
+	left: 240.5px;
+	display: inline-block;
+	width: 200px;
+	border: 1px solid grey;
+}
+.hover .childMenu li {
+	float: left;
+	padding: 15px 34px;
+	color: black;
+	cursor: pointer;
+}
+.hover {
+}
